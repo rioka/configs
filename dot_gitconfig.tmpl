@@ -1,0 +1,14 @@
+[user]
+	name = rioka
+	email = rioka@libero.it
+{{- if eq .chezmoi.os "windows" }}
+	editor = notepad
+{{- end }}
+{{- if eq .chezmoi.os "linux" }}
+	editor = nano
+{{- end }}
+[alias]
+	st = status
+[gpg]
+	format = ssh
+
