@@ -1,2 +1,5 @@
 LICENSE 
 README.md 
+{{ if ne .chezmoi.os "linux" }}
+.config
+{{ end }}
