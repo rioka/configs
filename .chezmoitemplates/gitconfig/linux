@@ -1,0 +1,19 @@
+[core]
+	editor = nano
+[format]
+	commitMessageColumns = 72
+[user]
+	name = rioka
+	email = rioka@libero.it
+[credential "https://github.com"]
+	provider = github
+[gpg]
+	format = ssh
+[commit]
+	gpgSign = false
+[pull]
+	rebase = false
+[push]
+	recurseSubmodules = check
+[rerere]
+	enabled = true
