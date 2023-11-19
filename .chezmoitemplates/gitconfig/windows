@@ -1,0 +1,60 @@
+[core]
+	editor = notepad
+	sshCommand = "C:/Windows/System32/OpenSSH/ssh.exe"
+[format]
+	commitMessageColumns = 72
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	l1g = log --oneline --graph
+	l1 = log --oneline
+	cln = clean -d -f -x -e *.dbmdl -e *.jfm
+	cob = checkout -b
+	delb = branch -D
+	mnff = merge --no-ff
+	lb = branch -a
+	undo = reset HEAD~
+	unstagefile = reset HEAD
+	unstageall = reset HEAD --
+	ss = stash save
+	email = config user.email
+	username = config user.name
+	last = log -1 HEAD
+	showalias = config --get-regexp alias
+	showorigin = remote show origin
+	ps = push
+	psup = push --set-upstream origin
+	pl = pull
+	plp = pull --prune
+	mt = mergetool
+	renb = branch -m
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+	path = C:/Program Files/KDiff3/kdiff3.exe
+	trustExitCode = false
+[diff]
+	guitool = kdiff3
+[difftool "kdiff3"]
+	path = C:/Program Files/KDiff3/kdiff3.exe
+	trustExitCode = false
+[user]
+	name = rioka
+	email = rioka@libero.it
+[credential "https://github.com"]
+	provider = github
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = C:/Windows/System32/OpenSSH/ssh-keygen.exe
+[commit]
+	gpgSign = false
+[pull]
+	rebase = false
+[gui]
+	pruneduringfetch = true
+[push]
+	recurseSubmodules = check
+[rerere]
+	enabled = true
